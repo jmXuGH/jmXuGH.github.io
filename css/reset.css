@@ -1,0 +1,120 @@
+html,
+body,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+form,
+fieldset,
+legend,
+table,
+ol,
+li,
+th,
+td,
+tr,
+colgroup,
+caption {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+b,
+strong {
+	font-weight: normal;
+}
+
+i,
+em {
+	font-style: normal;
+}
+
+textarea {
+	resize: none;
+}
+
+input,
+a {
+	outline: none;
+}
+
+/* 取消点击是的虚线框 */
+table {
+	border-collapse: collapse;
+}
+
+fieldset,
+img {
+	border: 0 none;
+}
+
+body {
+	font: 12px "微软雅黑";
+}
+
+.float-l {
+	float: left;
+}
+
+.float-r {
+	float: right;
+}
+
+.clearBoth:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.clearBoth {
+	zoom: 1;
+}
+
+.borderNo {
+	border: none !important;
+}
+
+.bgNo {
+	background: none !important;
+}
+
+/* 固定水平居中垂直居中 */
+.fixed {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}

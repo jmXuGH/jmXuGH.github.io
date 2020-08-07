@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .wrap {
+            width: 100%;
+            background-color: #f5f5f5;
+        }
+
+        .wrap .box {
+            margin: 0px auto;
+            width: 1210px;
+            height: 145px;
+            position: relative;
+        }
+
+        .wrap .box .left .txtTop {
+            position: relative;
+            padding-left: 35px;
+            margin: 20px 0;
+        }
+
+        .wrap .box .left .txtTop .icon {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            display: block;
+            width: 25px;
+            height: 25px;
+            background: url(./img/addtocart-icons.png) 0 0 no-repeat;
+        }
+
+        .wrap .box .left .txtTop span {
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 400;
+            color: #71b247;
+        }
+
+        .wrap .box .left .shopBox .img-box {
+            margin-right: 10px;
+        }
+
+        .wrap .box .left .shopBox .img-box img {
+            height: 60px;
+            width: 60px;
+        }
+
+        .wrap .box .left .shopBox .shop-intro-box {
+            width: 520px;
+            color: #aaa;
+        }
+
+        .wrap .box .left .shopBox .shop-intro-box .shop-intro {
+            height: 28px;
+            line-height: 28px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .box .right {
+            position: absolute;
+            bottom: 20px;
+            right: 0;
+        }
+
+        .box .right .btn-box .btn1 {
+            padding: 0 30px;
+            margin-right: 10px;
+            background: #fff;
+            color: #E2231A;
+            border: 1px solid #fff;
+            display: inline-block;
+            height: 34px;
+            line-height: 36px;
+            font-size: 16px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        .box .right .btn-box .btn2 {
+            position: relative;
+            width: 136px;
+            padding-left: 30px;
+            background: #E2231A;
+            border: 1px solid #E2231A;
+            color: #fff;
+            display: inline-block;
+            height: 34px;
+            line-height: 36px;
+            font-size: 16px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box clearBoth">
+            <div class="left float-l">
+                <div class="txtTop">
+                    <i class="icon"></i>
+                    <span>商品已成功加入购物车</span>
+                </div>
+                <div class="shopBox">
+                    <div class="img-box float-l"><img src="./img/goods1.jpg" alt=""></div>
+                    <div class="shop-intro-box">
+                        <p class="shop-intro">
+                            小米（MI） 显示器/34英寸144Hz曲面屏/高刷新率低蓝光直面屏/23.8英寸60HZ显示屏 23.8英寸10
+                        </p>
+                        <p>
+                            <span class="guige">颜色：23.8英寸爆款</span>
+                            <span>数量：</span>
+                            <span class="nums">1</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="btn-box">
+                    <a class="btn1">查看商品详情</a>
+                    <a href="./shoppingCard.html" class="btn2">去购物车结算</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        var goodsId = localStorage.getItem('thisGoodsId');
+        $.get(
+            './data/goods.json', '',
+            function (data) {
+                $.each(data, function (index, item) {
+                    if (goodsId == item.goodsId) {
+                        $('.img-box img').attr('src', item.imgSrc)
+                        $('.shop-intro').text(item.intro) ;
+                        return false;
+                    }
+
+                });
+            }, 'json'
+        )
+    </script>
+</body>
+
+</html>
