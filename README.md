@@ -9,6 +9,6 @@
 
 ## git remote add origin 仓库地址
 1.把本地仓库与远程仓库关联
-
+ssh使用
 
 试了试分支跟新
