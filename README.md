@@ -4,8 +4,7 @@
     asdasd
     asdas
 
-    sadasdasdas
-    asdasdas
+    sadasdasdagailegai 
 修改一下文件
 
 ## git remote add origin 仓库地址
