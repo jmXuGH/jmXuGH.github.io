@@ -6,14 +6,14 @@ body {
 
 .wrap {
     width: 100%;
-    height: 100%;
+    min-height: 1000PX;
     background-color: #fff;
 }
 
 .wrap .con {
     margin: 30px auto;
     width: 988px;
-    min-height: 1000px;
+    min-height: 100px;
     position: relative;
 }
 
@@ -113,7 +113,6 @@ body {
 
 .goods_cart_box .goods_con .cart-checkbox {
     position: absolute;
-    z-index: 3;
     left: 10px;
     top: 0;
     width: 30px;
@@ -242,6 +241,132 @@ body {
     display: block;
 }
 
-.goods_cart_box .goods_con .cart-item .action a:hover{
+.goods_cart_box .goods_con .cart-item .action a:hover {
     color: #E2231A;
+}
+
+.bottom {
+    /* position: fixed; */
+    width: 100%;
+    min-height: 50px;
+    background: #fff;
+}
+.botFixed{
+    position: fixed;
+    box-shadow: 0 -1px 8px rgba(0, 1, 1, .08);
+    bottom: 0;
+}
+.bottom .botCon {
+    width: 988px;
+    height: 50px;
+    border: 1px solid #f0f0f0;
+    background: #fff;
+    margin: auto;
+    
+}
+
+.bottom .botCon .botConLeft {
+    line-height: 50px;
+    float: left;
+    background: #fff;
+}
+
+.bottom .botCon .botConLeft li {
+    float: left;
+    margin-right: 5px;
+}
+
+.bottom .botCon .botConLeft li a {
+    color: #666;
+}
+
+.bottom .botCon .botConLeft li:last-child a {
+    font-weight: bolder;
+}
+
+.bottom .botCon .botConLeft li input {
+    margin-right: 5px;
+}
+
+.bottom .botCon .botConRight li {
+    float: left;
+}
+
+.bottom .botCon .botConRight .js-btn {
+    position: relative;
+    width: 94px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+    background: #e54346;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.bottom .botCon .botConRight .checkCount {
+    padding-top: 12px;
+    color: #999;
+}
+
+.bottom .botCon .botConRight .checkCount .num{
+    color: #E2231A;
+    font-family: verdana;
+    font-weight: 700;
+    margin: 0 3px;
+}
+
+.bottom .botCon .botConRight .totalPrice {
+    margin: 7px 5px 0 15px;
+    height: 43px;
+    color: #666;
+    position: relative;
+}
+
+.bottom .botCon .botConRight .totalPrice .totalTit {
+    width: 50px;
+    line-height: 20px;
+    height: 20px;
+    text-align: right;
+}
+
+.bottom .botCon .botConRight .totalPrice .money {   
+    font-size: 16px;
+    color: #E2231A;
+    font-weight: 700;
+}
+
+.bottom .botCon .botConRight .totalPrice .cuxiao{
+    position: absolute;
+    right: 0;
+    width: auto;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.bottom .botCon .botConRight .totalPrice .icon{
+    vertical-align: text-bottom;
+    display: inline-block;
+    height: 18px;
+    width: 12px;
+    background: url(//misc.360buyimg.com/user/cart/css/i/price-tips.png) 0 0 no-repeat;
+}
+
+
+
+
+.bottom .botCon .botConRight .checkCount .icon{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 9px;
+    height: 5px;
+    background: url(//misc.360buyimg.com/user/cart/css/i/cart-icons-202004.png) -45px -91px;
+    overflow: hidden;
+    vertical-align: middle;
+    margin: -5px 0 0 5px;
+    -webkit-transition: all .2s ease-in 0s;
+    transition: all .2s ease-in 0s;
 }

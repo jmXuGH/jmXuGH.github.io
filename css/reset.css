@@ -118,3 +118,7 @@ body {
 	left: 0;
 	margin: auto;
 }
+
+a{
+	cursor: pointer;
+}

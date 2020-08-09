@@ -30,6 +30,49 @@
         "commit":"53万+",
         "shop":"AOC京东自营旗舰店",
         "goodsId":"004"
+    },
+
+
+    {
+        "imgSrc":"./img/goods1.jpg",
+        "price":499.00,
+        "intro":"创维（Skyworth） 电脑显示器 家用办公 21.5英寸 VA面板 显示屏 广视角 可壁挂 ",
+        "commit":"19万+",
+        "shop":"创维京东自营官方旗舰店",
+        "goodsId":"005"
+    },
+    {
+        "imgSrc":"./img/goods2.jpg",
+        "price":599.00,
+        "intro":"Redmi显示器1A 23.8英寸 IPS技术硬屏 三微边设计 低蓝光 纤薄机身 三年质保 黑色",
+        "commit":"25万+",
+        "shop":"小米京东自营旗舰店",
+        "goodsId":"006"
+    },
+    {
+        "imgSrc":"./img/goods3.jpg",
+        "price":1299.00,
+        "intro":"AOC 23.8英寸IPS技术屏 广视角 低蓝光爱眼 可壁挂 电脑办公液晶显示",
+        "commit":"51万+",
+        "shop":"AOC京东自营旗舰店",
+        "goodsId":"007"
+    },
+    {
+        "imgSrc":"./img/goods4.jpg",
+        "price":799.00,
+        "intro":"AOC 23.8英寸 AH-IPS硬屏 1.5mm窄边框 低蓝光爱眼不闪屏 电脑显示",
+        "commit":"53万+",
+        "shop":"AOC京东自营旗舰店",
+        "goodsId":"008"
+    },
+    {
+        "imgSrc":"./img/goods2.jpg",
+        "price":599.00,
+        "intro":"Redmi显示器1A 23.8英寸 IPS技术硬屏 三微边设计 低蓝光 纤薄机身 三年质保 黑色",
+        "commit":"25万+",
+        "shop":"小米京东自营旗舰店",
+        "goodsId":"009"
     }
+    
 
 ]

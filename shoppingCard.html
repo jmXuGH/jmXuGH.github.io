@@ -11,7 +11,7 @@
 
 <body>
 
-    <div class="wrap">
+    <div class="wrap clearBoth">
         <div class="con">
             <div class="count_box clearBoth">
                 <div class="count_num_box float-l">
@@ -33,7 +33,6 @@
                     <li class="column t-sum">小计</li>
                     <li class="column t-action">操作</li>
                 </ul>
-
             </div>
             <div class="goods_cart_box">
                 <!-- <div class="goods_con">
@@ -59,6 +58,26 @@
                 </div>-->
             </div>
         </div>
+        
+        <div class="bottom">
+            <div class="botCon">
+                <ul class="botConLeft">
+                    <li><input class="botCheck" type="checkbox"><span>全选</span></li>
+                    <li><a>删除选中商品</a></li>
+                    <li><a href="">移到关注</a></li>
+                    <li><a href="">清理购物车</a></li>
+                </ul>
+                <ul class="botConRight float-r">
+                    <li class="checkCount"><span>已选择<i class="num">8</i>件商品<i class="icon"></i></span></li>
+                    <li class="totalPrice">
+                        <p><span class="totalTit">总价：</span><span class="money">￥<i class="moneyNum">5432.00</i> </span> <i class="icon"></i> </p>
+                        <p class="cuxiao"><span>促销：-￥</span><span>0.00</span></p>
+                    </li>
+                    <li class="js-btn">去结算</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     </div>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="./js/shoppingCard.js"></script>
