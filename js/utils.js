@@ -1,3 +1,4 @@
+
 // 获取元素样式，兼容谷、歌火狐、IE678
 function getStyle(dom,attr){
     if (dom.currentStyle) {//IE
@@ -144,7 +145,8 @@ function on(parent,type,selector,callback){
 // 支持 透明度切换，支持 scrollLeft  scrollTop
 // 支持多属性同时运动
 // function animate(dom,attr,target){// 单属性  当前值 -> 目标值
-function animate(dom,attr_obj,callback){// 多属性  当前值 -> 目标值
+function animate(dom,attr_obj,callback){
+    // 多属性  当前值 -> 目标值
     // 获取每一个属性的current和target，重新整理attr_obj对象
     // attr_obj = {
     //     'width': {

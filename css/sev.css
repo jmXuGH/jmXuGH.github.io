@@ -1,0 +1,127 @@
+.service_list .itemUp .service_item span::before {
+    position: absolute;
+    width: 24px;
+    height: 0;
+    left: 50%;
+    margin-left: -11px;
+    border-bottom: 2px solid #fff;
+    bottom: 0;
+    content: " ";
+}
+
+.service_list .itemUp .itemActive span::before {
+    border-bottom-color: #e1251b;
+}
+
+
+.hideBox {
+    background-color: #fff;
+    z-index: 2;
+    position: absolute;
+    top: 230px;
+    width: 159px;
+    height: 200px;
+    padding: 0 15px;
+}
+
+.hideBox .hfTabCon .hfTab li {
+    float: left;
+    width: 53px;
+    cursor: pointer;
+    color: #666;
+    font-size: 12px;
+}
+
+.hideBox .hfTabCon .hfTab .hov {
+    color: #e40015;
+}
+
+.hideBox .hfTabCon .hfTab {
+    padding-top: 12px;
+    height: 21px;
+}
+
+.hideBox .hfTabCon .hfTab-item1 input {
+    color: #c2c2c2;
+    float: left;
+    width: 124px;
+    height: 20px;
+    margin: 0;
+    line-height: 20px;
+    border: 1px solid #e7e7e7;
+    text-indent: .6em;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.hideBox .hfTabCon .hfTab-item1 #mianzhi {
+    color: #c2c2c2;
+    float: left;
+    width: 124px;
+    height: 20px;
+    margin: 0;
+    line-height: 20px;
+    border: 1px solid #e7e7e7;
+    text-indent: .6em;
+    box-sizing: border-box;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.hideBox .hfTabCon .hfTab-item1 label {
+    width: 34px;
+    display: block;
+    float: left;
+    margin-top: 9px;
+    color: #666;
+}
+
+.hideBox .hfTabCon .hfTab-item1 .payMsg {
+    color: #e40015;
+    margin-top: 10px;
+}
+
+.hideBox .hfTabCon .hfTab-item1 .fastPay {
+    background: #e40015;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 6px;
+    margin-bottom: 5px;
+}
+
+.hideBox .hfTabCon .hfTab-item1 a {
+    color: #5476DB;
+}
+
+.hideBox .closeHideBox {
+    font-weight: "宋体";
+    font-size: 22px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+
+}
+
+.hideBox .closeHideBox p {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    font-weight: 100;
+    color: #666;
+    transition: all .2s ease;
+}
+
+.hideBox .closeHideBox p:hover {
+    color: #fff;
+    background-color: #e40015;
+}

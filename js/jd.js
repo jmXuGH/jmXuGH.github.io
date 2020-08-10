@@ -1,3 +1,6 @@
+export default function jd(){
+
+
 var fl = document.querySelector('.fl')
 var dr = document.querySelector('.addr')
 var addr_box = document.querySelector('.addr-box')
@@ -331,4 +334,5 @@ tl2.onclick = function () {
     timer2 = setInterval(function() {
         tnext2();
     }, 3000);
+}
 }

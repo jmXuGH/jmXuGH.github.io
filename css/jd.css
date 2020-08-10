@@ -873,11 +873,16 @@ body {
     overflow: hidden;
     background-color: #fff;
     padding: 5px .5px;
+
+}
+
+.fs_col3 .bottom .service_list {
+    position: relative;
 }
 
 .fs_col3 .bottom .service_item {
-    float: left;
     position: relative;
+    float: left;
     width: 63px;
     height: 55px;
     background: #fff;
@@ -915,14 +920,14 @@ body {
     display: none;
 }
 
-.fs_col3 .bottom .service_item a:hover .service_ico_img_hover{
+.fs_col3 .bottom .service_item a:hover .service_ico_img_hover {
     display: block;
 }
 
-.fs_col3 .bottom .service_item a:hover .service_ico_img{
+.fs_col3 .bottom .service_item a:hover .service_ico_img {
     display: none;
 }
 
-.fs_col3 .bottom .service_item a:hover span{
+.fs_col3 .bottom .service_item a:hover span {
     color: #e1251b;
 }

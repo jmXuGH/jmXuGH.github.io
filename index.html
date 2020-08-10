@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/JD.css">
+    <link rel="stylesheet" href="./css/jd.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/sev.css">
 </head>
+
 <body>
     <div class="content">
         <div class="wrap">
@@ -512,25 +514,32 @@
                             <li><a href=""><span class="news_tag">热议</span>Ulike脱毛仪冰点激光脱毛，夏季穿上心爱小吊带</a> </li>
                         </ul>
                     </div>
+
+
+                    <!-- sev html  开始-->
                     <div class="bottom">
                         <!-- <div class="bot_tab">
                             <div class="active">话费</div>
                             <div></div>
                             <div></div>
                         </div> -->
-                        <ul class="service_list">
-                            <li class="service_item"><a href="" class="service_lk"><i><img class="service_ico_img"
-                                            src="./img/sev11.png" alt=""> <img class="service_ico_img_hover"
-                                            src="./img/sev12.png" alt=""></i><span class="service_txt">花费</span></a>
-                            </li>
-                            <li class="service_item"><a href="" class="service_lk"><i><img class="service_ico_img"
-                                            src="./img/sev21.png" alt=""> <img class="service_ico_img_hover"
-                                            src="./img/sev22.png" alt=""> </i><span class="service_txt">机票</span></a>
-                            </li>
-                            <li class="service_item"><a href="" class="service_lk"><i><img class="service_ico_img"
-                                            src="./img/sev31.png" alt=""> <img class="service_ico_img_hover"
-                                            src="./img/sev32.png" alt=""></i><span class="service_txt">酒店</span></a>
-                            </li>
+                        <ul class="service_list clearBoth">
+                            <div class="itemUp clearBoth" style=" position: relative;">
+                                <li class="service_item"><a href="" class="service_lk"><i><img class="service_ico_img"
+                                                src="./img/sev11.png" alt=""> <img class="service_ico_img_hover"
+                                                src="./img/sev12.png" alt=""></i><span class="service_txt">花费</span></a>
+
+                                </li>
+                                <li class="service_item"><a href="" class="service_lk"><i><img class="service_ico_img"
+                                                src="./img/sev21.png" alt=""> <img class="service_ico_img_hover"
+                                                src="./img/sev22.png" alt=""> </i><span
+                                            class="service_txt">机票</span></a>
+                                </li>
+                                <li class="service_item"><a href="" class="service_lk"><i><img class="service_ico_img"
+                                                src="./img/sev31.png" alt=""> <img class="service_ico_img_hover"
+                                                src="./img/sev32.png" alt=""></i><span class="service_txt">酒店</span></a>
+                                </li>
+                            </div>
                             <li class="service_item"><a href="" class="service_lk"><i><img class="service_ico_img"
                                             src="./img/sev41.png" alt=""> <img class="service_ico_img_hover"
                                             src="./img/sev42.png" alt=""></i><span class="service_txt">游戏</span></a>
@@ -567,6 +576,32 @@
                                             src="./img/121.png" alt=""> <img class="service_ico_img_hover"
                                             src="./img/122.png" alt=""></i><span class="service_txt">礼品卡</span></a>
                             </li>
+                            <div class="hideBox">
+                                <div class="hfTabCon">
+                                    <ul class="hfTab clearBoth">
+                                        <li class="hov">话费充值</li>
+                                        <li>流量充值</li>
+                                        <li>套餐变更</li>
+                                    </ul>
+                                    <div class="hfTab-item1">
+                                        <div class="clearBoth">
+                                            <p><label for="pnum">号码</label><input placeholder="请输入手机号" id="pnum"
+                                                    type="text"></p>
+                                            <p><label for="mianzhi">面值</label><select name="" id="mianzhi">
+                                                    <option value="100元">100元</option>
+                                                </select></p>
+                                        </div>
+                                        <p class="payMsg">￥98.0-￥100.0</p>
+                                        <div class="fastPay">快速充值</div>
+                                        <p><a href=""> 抢90减40元话费券</a></p>
+                                    </div>
+                                    <div class="hfTab-item2"></div>
+                                    <div class="hfTab-item3"></div>
+                                </div>
+                                <div class="closeHideBox">
+                                    <p>×</p>
+                                </div>
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -575,9 +610,8 @@
     </div>
 
     <script src="./js/utils.js"></script>
-    <script src="./js/jd.js">
-
-    </script>
+    <!-- <script src="./js/jd.js"></script> -->
+    <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>
